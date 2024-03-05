@@ -1,0 +1,117 @@
+.video{
+    position: relative;
+    margin-bottom: 115px;
+    @media (min-width: @tablet-width) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        padding-left: 199px;
+        padding-right: 201px;
+    }
+}
+.video__input{
+    position: absolute;
+    width: 280px;
+    height: 45px;
+    left: 20px;
+    top: 156px;
+    background-color: #000;
+    opacity: 0.6;
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 93px;
+        top: 407px;
+        left: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        width: 800px;
+        left: 199px;
+    }
+}
+.video__range{
+   position: absolute;
+   width: 235px; 
+   height: 3px;
+   left: 22px;
+   top: 22px;
+   @media (min-width: @tablet-width) {
+     width: 389px;
+     left: 93px;
+     top: 45px;
+   } 
+   @media (min-width: @desktop-width) {
+     width: 540px;
+   }
+}
+.video__buttons{
+    position: absolute;
+    top: 201px;
+    left: 20px;
+    background-color: #f2f2f2;
+    padding: 23px;
+    padding-left: 25px;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    @media (min-width: @tablet-width) {
+        position: static;
+        display: block;
+        background-color: transparent;
+    }
+}
+.video__button{
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    @media (min-width: @tablet-width) {
+        position: absolute;
+        top: 36px
+    }
+}
+.replay__button{
+    margin-right: 133px;
+    @media (min-width: @tablet-width) {
+        top: 442px;
+        left: 95px;
+        background-color: transparent;       
+    }
+    @media (min-width: @desktop-width) {
+        top: 442px;
+        left: 234px;
+    }
+}
+.video__replay-button-image{
+    @media (min-width: @tablet-width) {
+        fill: rgba(255, 255, 255, 1);
+    }
+}
+.subtitles__button{
+    @media (min-width: @tablet-width) {
+        top: 443px;
+        right: 152px;
+        background-color: transparent;
+        &-image{
+            fill: white;
+        }
+    }
+    @media (min-width: @desktop-width) {
+        right: 294px;
+    }
+}
+.fullscreen__button{
+    margin-left: auto;
+    @media (min-width: @tablet-width) {
+        top: 443px;
+        right: 101px;
+        background-color: transparent;
+        &-image{
+            fill: white;
+        }
+    }
+    @media (min-width: @desktop-width) {
+        right: 243px;
+    }
+}
+

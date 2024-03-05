@@ -1,0 +1,20 @@
+.container{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    @media (min-width: @tablet-width) {
+        width: @tablet-width;
+    }
+    @media (min-width: @desktop-width) {
+        width: @desktop-width;
+    }
+}
+.container__inner{
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (min-width: @tablet-width) {
+        width: 445px;
+        padding: 0;
+    }
+}

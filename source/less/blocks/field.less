@@ -1,0 +1,131 @@
+/*
+.field{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 14px;
+    align-items: center;
+}
+.field--contacts{
+    grid-template-columns: 1fr max-content;
+    column-gap: 0;
+}
+.field__title{
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    text-transform: uppercase;
+}
+.field--contacts .field__title{
+    grid-column: 1/-1;
+}
+.field__input{
+    min-width: 92px;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    background-color: #f2f2f2;
+    border: none;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    &:hover{
+        background-color: #E5E5E5;;
+    }
+    &:active{
+        outline: 4px solid #E5E5E5;
+        background-color: #FFF;
+    }
+}
+.field__input::placeholder{
+    color: #000;
+}
+.field__icon{
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+.field__icon--email{
+    padding: 23px 21px;
+}
+textarea.field__input{
+    display: block;
+    width: 100%;
+    padding: 13px 23px 29px 21px;
+    margin-bottom: 51px;
+}
+.form__group--comment .field{
+    display: block;
+    width: 100%;
+}
+.field--contacts .field__input{
+    @media (min-width: @tablet-width) {
+        width: 100%;
+    }
+}
+*/
+
+.field{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 7px;
+    align-items: center;
+}
+.field--contacts{
+    grid-template-columns: 222px 58px;
+    column-gap: 0;
+    row-gap: 8px;
+    @media (min-width: @tablet-width) {
+        grid-template-columns: 590px 58px;
+    }
+    @media (min-width: @tablet-width) {
+        grid-template-columns: max-content 257px 58px;
+    }
+}
+.field--contacts .field__title{
+    grid-column: 1/-1;
+    @media (min-width: @desktop-width) {
+        grid-column: 1/2;
+    }
+}
+.field__image{
+    height: 58px;
+    background-color: #e6e6e6;   
+}
+.field__icon--phone{
+    padding: 20px;
+    padding-left: 21px;
+}
+.field__icon--email{
+    padding: 23px;
+    padding-left: 21px;
+}
+.field__title{
+    color: #333;
+    text-transform: uppercase;
+}
+.field__input{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 18px 22px 14px 22px;
+    min-width: 98px;
+}
+.form__group--comment .field__input{
+    @media (min-width: @tablet-width) {
+        width: 648px;
+    }
+    @media (min-width: @desktop-width) {
+        width: 960px;
+    }
+}

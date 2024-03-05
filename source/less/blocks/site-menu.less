@@ -1,0 +1,108 @@
+.site-menu{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 320px;
+    @media(min-width: @tablet-width){
+        width: @tablet-width;
+        display: flex;
+        margin-top: -50px;
+    }
+    @media (min-width: @desktop-width) {
+        width: @desktop-width;
+    }
+}
+.site-menu__item{
+    background-color:  @color-blue;
+    box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20), 0px 1px 0px 0px rgba(255, 255, 255, 0.20) inset;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    &:hover{
+        background-color: #669EC0;
+    }
+    @media (min-width: @tablet-width) {
+        background-color: inherit;
+        box-shadow: none;
+        box-sizing: border-box;
+        width: 153px;
+        height: 56px;
+        padding-top: 16px;
+        padding-bottom: 14px;
+        &:hover{
+            background-color: inherit;
+        }
+    }
+    @media (min-width: @desktop-width) {
+        width: 239px;
+    }
+}
+.site-menu__item:nth-child(2){
+    @media (min-width: @tablet-width) {
+        margin-right: 156px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-right: 244px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .site-menu__item:first-child{
+        
+    }
+    .site-menu__item:nth-child(2){
+        
+    }
+    .site-menu__item:last-child{
+       
+    }
+}
+.site-menu__link{
+    position: relative;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    &:active{
+        opacity: 0.3;
+    }
+    @media (min-width: @tablet-width) {
+        color: #000;
+        font-size: 14px;
+        line-height: 26px;
+        &:hover{
+            color: #81B3D2;
+        }
+        &:active{
+            color: #000;
+            opacity: 0.3;
+        }
+    }
+}
+.site-menu__item--active .site-menu__link{
+    @media (min-width: @tablet-width) {
+        color: #766357;
+    }  
+}
+.page-header__nav--closed .site-menu{
+    display: none;
+    @media (min-width: @tablet-width) {
+        display: flex;
+    }
+}
+.page-header__nav--opened .site-menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+}

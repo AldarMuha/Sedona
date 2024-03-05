@@ -1,0 +1,40 @@
+
+.page-header__bar{
+    width: 320px;
+    height: 56px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.page-header__logo{
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+.page-header__toggler{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 23px;
+    height: 22px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url("../../img/toggler.svg");
+    border: none;
+    &:hover{
+        opacity: 0.6;
+    }
+    &:active{
+        opacity: 0.3;
+    }
+    @media (min-width: @tablet-width) {
+        display: none;
+    } 
+}
+
+.page-header__nav--opened .page-header__toggler{
+    display: block;
+    background-image: url("../../img/icon-cross.svg");
+    z-index: 3;
+
+}

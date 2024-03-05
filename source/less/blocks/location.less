@@ -1,0 +1,21 @@
+
+.location__container{
+    position: relative;
+}
+.location__container::before{
+    content:"";
+    background-image: url("../../img/map/map-marker.svg");
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 161px;
+    left: 146px;
+    @media (min-width: @tablet-width) {
+        top: 164px;
+        left: 370px;
+    }
+    @media (min-width: @desktop-width) {
+        top: 162px;
+        left: 586px;
+    }
+}

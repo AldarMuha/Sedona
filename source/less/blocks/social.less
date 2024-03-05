@@ -1,0 +1,28 @@
+.social{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,46px);
+    grid-template-rows: 48px;
+    gap: 6px;
+    margin-bottom: 40px;
+    @media (min-width: @tablet-width) {
+        margin-bottom: 0;
+    }
+}
+.social__link{
+    width: 46px;
+    height: 48px;
+    background-color: @color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background-color: #669EC0;
+    }
+}
+.social__link svg:active{
+    opacity: 0.3;
+}

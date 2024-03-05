@@ -1,0 +1,51 @@
+.promo{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    background-image:
+        url("../../img/promo/welcome.svg"),
+        url("../../img/promo/intro-triangle.png"),
+        url("../../img/promo/promo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%, 50% 100%, 50%;
+    width: 320px;
+    height: 389px;
+    @media (min-width: 768px) {
+        width: 768px;
+        height: 518px;
+        background-image:
+        url(../../img/promo/tablet/text-index.svg),
+        url(../../img/promo/tablet/intro-triangle.png),
+        url(../../img/promo/tablet/back-desktop.jpg)
+        ;
+    }
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+        height: 518px;
+        background-image: 
+        url("../../img/promo/desktop/text-index.svg"),
+        url("../../img/promo/desktop/intro-triangle\ \(2\).png"),
+        url("../../img/promo/desktop/back-desktop.jpg");
+    }
+}
+.promo--inner{
+    background-image: 
+        url("../../img/promo/sedona.svg"),
+        url("../../img/promo/intro-triangle.png"),
+        url("../../img/promo/promo-catalog.jpg");
+    height: 158px;
+    @media (min-width: @tablet-width) {
+        height: 290px;
+        background-image: 
+            url("../../img/promo/inner/SEDONA.svg"),
+            url("../../img/promo/inner/intro-triangle.png"),
+            url("../../img/promo/inner/back-desktop.jpg");
+    }
+    @media (min-width: @desktop-width) {
+        height: 301px;
+        background-image: 
+            url("../../img/promo/inner/desktop/text-sedona.svg"),
+            url("../../img/promo/inner/desktop/intro-triangle.png"),
+            url("../../img/promo/inner/desktop/back-desktop.jpg");
+    }
+  
+}

@@ -1,0 +1,155 @@
+/*
+.form__container{
+    width: 280px;
+    position: relative;
+    padding-top: 20px;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        width: 648px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 78px;
+    }
+    @media (min-width: 1200px) {
+        width: 960px;
+        column-gap: 208px;
+    }
+}
+.form__group--user{
+    padding-bottom: 25px;
+    @media (min-width: @desktop-width) {
+        position: relative;
+        
+    }
+}
+.form__group--user .field-group__list::before{
+    @media (min-width: @tablet-width) {
+        content: "";
+        width: 1px;
+        height: 292px;
+        position: absolute;
+        left: 0;
+        top: -79px;
+        background-color: #dbdbdb;
+        z-index: 1;
+    }
+    
+}
+.form__group--contacts{
+    padding-bottom: 28px;
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+.form__group--valuation{
+    padding-bottom: 31px;
+    @media (min-width: @tablet-width) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.form__group--attractions{
+    padding-bottom: 30px;
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        margin: 0 auto;
+    }
+}
+.form__button{
+    margin-bottom: 48px;
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        margin: 0 auto;
+    }
+}
+.form__group--comment{
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+.form__container::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 320px;
+        height: 1px;
+        background-color: #e5e5e5;
+        @media (min-width: 768px) {
+            display: none;
+        }
+}
+*/
+.form__container{
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 79px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        column-gap: 208px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+.form__group{
+    border: none;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        padding: 0;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 1px;
+        top: 0;
+        left: 0;
+        background-color: #e5e5e5;
+        @media (min-width: @tablet-width) {
+            display: none;
+        }
+    }
+    &--valuation{
+        padding-bottom: 41px;
+        @media (min-width: @tablet-width) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-bottom: 76.5px;
+        }
+    }
+    &--user{
+        @media (min-width: @tablet-width) {
+            grid-column: 2/(-1);
+            grid-row: 1/2;
+            padding-bottom: 72.5px;
+        }
+    }
+    &--attractions{
+        padding-bottom: 39px;
+        @media (min-width: @tablet-width) {
+            padding-bottom: 75.5px;
+        }
+    }
+    &--contacts{
+        padding-bottom: 51.5px;
+    }
+    &--comment{
+        padding-bottom: 58px;
+    }
+}
+.form__button{
+    @media (min-width: @tablet-width) {
+        grid-column: 1/(-1);
+        margin-bottom: 61px;
+    }  
+}
